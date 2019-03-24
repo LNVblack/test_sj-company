@@ -55,3 +55,91 @@ img{
 
 
 /*Оформление формы*/
+.b-container{
+    background: none;
+    border: 2px solid #fb6000;
+    margin: 30px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 28px;
+    color: #fb6000;
+    text-align: center;
+    cursor: pointer;
+}
+.b-container:hover{
+    transition: 0.9s;
+    background-color: #fb6000;
+    color: white;
+}
+.b-popup{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;   
+    display: none;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width: 25%;
+    height: auto;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    border: 2px solid #fb6000;
+}
+.b-popup-content .inputT{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #fb6000;
+    padding: 10px 10px;
+    border-radius: 24px;
+}
+.tKKM{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #fb6000;
+    padding: 10px 45px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.PerInf{
+    text-align: center;
+    cursor: pointer;
+}
+.PerInf label{
+    cursor: pointer;
+}
+.applicationButton{
+    font-size:20px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #fb6000;
+    padding: 10px 10px;
+    border-radius: 24px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.applicationButton:hover{
+    background-color: #fb6000;
+    transition: 0.5s;
+    color: wheat;
+}
+.ClosePopUp{
+    color: black;
+    font-size: 80px;
+    float: right;
+    margin: -60px -31px;
+    transition: 0.5s;
+}
+.ClosePopUp:hover{
+    transition: 1s;
+    transform: rotate(134deg);
+}

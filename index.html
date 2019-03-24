@@ -134,26 +134,36 @@
                 </div>
             </div>
         </section>
-        <div class="formwrap">
-            <form name="application" id="application" action="mail.php" method="POST">
-                <input name="name" id="Name" maxlength="20" placeholder="Введите ваше имя." required>
-                <input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required>
-                    <div class="optinZakaz">
-                        <span>Укажите модель ККМ</span>
-                        <select class="tKKM" name="tKKM">
-                            <option value="Атол-25Ф">Атол-25Ф</option>
-                            <option value="Атол-30Ф">Атол-30Ф</option>
-                            <option value="Атол-11Ф">Атол-11Ф</option>
-                            <option value="Атол-42ФС">Атол-42ФС</option>
-                        </select>
-                    </div>
-                    <div class="PerInf">
-                        <span>Согласие на обратку персональных данных</span> <input type="checkbox" class="PerIntCheck" name="PerIntCheck" value="Согласие на обратку персональных данных" checked>
-                    </div>
-                <button class="applicationButton" type="submit" form="application">Отправить заявку</button>
-            </form>
+
+        <button class="b-container" type="button" onclick="PopUpShow()">Приобрести</button>
+        
+        <div class="b-popup" id="popup1">
+            <div class="b-popup-content">
+                <a class="ClosePopUp" href="javascript:PopUpHide()">&times;</a>
+                <div class="formwrap">
+                    <form name="application" id="application" action="mail.php" method="POST">
+                        <input class="inputT" name="name" id="Name" maxlength="20" placeholder="Введите ваше имя." required>
+                        <input class="inputT" name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <div class="optinZakaz">
+                                <select class="tKKM" name="tKKM">
+                                    <option>Выберите ККМ</option>
+                                    <option value="Атол-25Ф">Атол-25Ф</option>
+                                    <option value="Атол-30Ф">Атол-30Ф</option>
+                                    <option value="Атол-11Ф">Атол-11Ф</option>
+                                    <option value="Атол-42ФС">Атол-42ФС</option>
+                                </select>
+                            </div>
+                            <div class="PerInf">
+                                <label for="checkboxI">Согласие на обработку персональных данных</label>
+                                <input type="checkbox" id="checkboxI" class="PerIntCheck" name="PerIntCheck" value="checkboxI" checked>
+                            </div>
+                        <button class="applicationButton" type="submit" form="application">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
