@@ -56,20 +56,24 @@ img{
 
 /*Оформление формы*/
 .b-container{
-    background: none;
+    background-color: #fb6000;
+    position: fixed;
     border: 2px solid #fb6000;
     margin: 30px;
     padding: 10px;
     font-size: 30px;
+    right: 0.5%;
+    bottom: 1%; /* Расстояние сверху */
     border-radius: 28px;
-    color: #fb6000;
+    color: white;
     text-align: center;
     cursor: pointer;
+    transform: scale(0.7);
+    transition: 0.5s;
 }
 .b-container:hover{
     transition: 0.9s;
-    background-color: #fb6000;
-    color: white;
+    transform: scale(1);
 }
 .b-popup{
     width: 100%;
@@ -89,7 +93,7 @@ img{
     border-radius:5px;
     border: 2px solid #fb6000;
 }
-.b-popup-content .inputT{
+.b-popup-content .inputT, .inputT2{
     font-size: 18px;
     display: block;
     text-align: center;

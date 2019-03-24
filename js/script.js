@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
     PopUpHide();
     $("#applicationTelephone").mask("+7(000)000-00-00", {
-        placeholder: "+7(___)___-__-__",
+        placeholder: "",
         clearIfNotMatch: true
       });
 });
