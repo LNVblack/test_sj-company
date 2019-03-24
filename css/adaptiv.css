@@ -1,3 +1,35 @@
-@media screen and (max-width:1550px){
-    
+@media screen and (max-width:1000px){
+    .b-popup-content .inputT{
+        font-size: 14px;
+    }
+    .tKKM{
+        font-size: 14px;
+    }
+    .applicationButton{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:870px){
+    .b-popup .b-popup-content{
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+    .b-popup .b-popup-content{
+        width: 50%;
+    }
+    .ClosePopUp{
+        font-size: 60px;
+        margin: -48px -28px;
+    }
+}
+@media screen and (max-width:440px){
+    .b-popup .b-popup-content{
+        width: 90%;
+    }
+    .ClosePopUp{
+        float: left;
+        font-size: 40px;
+        margin: -35px -21px;
+    }
 }
